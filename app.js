@@ -10,6 +10,8 @@ const catalogRouter = require("./routes/catalog");
 const compression = require("compression");
 const helmet = require("helmet");
 
+require("dotenv").config();
+
 const app = express();
 
 const RateLimit = require("express-rate-limit");
